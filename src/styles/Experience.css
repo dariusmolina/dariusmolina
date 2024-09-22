@@ -1,0 +1,55 @@
+.experience-container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 100px;
+}
+
+.experience-section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.work-experience, .leadership-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.job, .role {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job:hover, .role:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.job h3, .role h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.job ul, .role ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.job li, .role li {
+  margin-bottom: 8px;
+  color: #ddd;
+}
+
+.resume-container {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: 750px;
+}

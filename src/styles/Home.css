@@ -1,0 +1,31 @@
+/* Center the content of the home section */
+.home-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .typed-section {
+    position: absolute;
+    z-index: 10;  /* Ensures the text is on top of the 3D scene */
+    color: #fff;
+    text-align: center;
+  }
+  
+  .typed-element {
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Set body and html to 100% height to ensure the canvas fits the screen */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;  /* Dark background to contrast the 3D object */
+    overflow: hidden;
+  }
+  

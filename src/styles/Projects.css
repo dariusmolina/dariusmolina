@@ -3,6 +3,7 @@
   margin: 0 auto;
   max-width: 1200px;
   padding: 100px;
+  padding-top: 150px; /* Push it down below the navbar */
 }
 
 .projects-heading {
@@ -15,22 +16,25 @@
 /* Project card styling */
 .project-card {
   background-color: #333;
-  padding: 20px;
+  padding: 25px;
   border-radius: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem; /* Match font size with Experience section */
 }
 
 .project-card h3 {
   margin-bottom: 10px;
   color: #fff;
+  font-size: 1.75rem; /* Match heading font size */
 }
 
 .project-card p,
 .project-card ul {
   margin-bottom: 10px;
   color: #ddd;
+  font-size: 1rem; /* Match text font size */
 }
 
 .project-description {
@@ -39,7 +43,7 @@
 }
 
 .project-description li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .project-card a {
@@ -54,22 +58,26 @@
 
 .project-techStack {
   color: #aaa;
+  font-size: 0.9rem; /* Match font size with Experience section */
 }
 
 .project-date {
   color: #999;
   margin-bottom: 15px;
+  font-size: 0.9rem; /* Match date font size with Experience section */
 }
 
 /* Add responsiveness for smaller screens */
 @media (max-width: 768px) {
   .projects-container {
     padding: 10px;
+    padding-top: 120px; /* Adjust for smaller screens */
   }
 
   .project-card {
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 30px;
+    font-size: 0.9rem;
   }
 
   .project-card h3 {
@@ -93,6 +101,10 @@
     font-size: 0.9rem;
   }
 
+  .project-date {
+    font-size: 0.9rem;
+  }
+
   .project-card:hover {
     transform: none;
     box-shadow: none;
@@ -102,8 +114,9 @@
 /* Extra small screens (mobile devices) */
 @media (max-width: 480px) {
   .project-card {
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 20px;
+    font-size: 0.8rem;
   }
 
   .project-card h3 {
@@ -120,6 +133,10 @@
   }
 
   .project-techStack {
+    font-size: 0.8rem;
+  }
+
+  .project-date {
     font-size: 0.8rem;
   }
 }

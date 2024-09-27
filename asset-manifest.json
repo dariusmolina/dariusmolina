@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.8774e9f1.css",
+    "main.css": "/static/css/main.00b468ee.css",
     "main.js": "/static/js/main.e66a2fec.js",
     "static/js/197.c74ee576.chunk.js": "/static/js/197.c74ee576.chunk.js",
     "static/media/gradpic.jpg": "/static/media/gradpic.51fe3fbc8d5ef8840716.jpg",
@@ -9,11 +9,11 @@
     "static/media/pcn.jpg": "/static/media/pcn.f224b6d7a39d9c972122.jpg",
     "static/media/Darius_Molina_Resume.pdf": "/static/media/Darius_Molina_Resume.dea2e2d462ab11560db5.pdf",
     "index.html": "/index.html",
-    "main.8774e9f1.css.map": "/static/css/main.8774e9f1.css.map",
+    "main.00b468ee.css.map": "/static/css/main.00b468ee.css.map",
     "main.e66a2fec.js.map": "/static/js/main.e66a2fec.js.map"
   },
   "entrypoints": [
-    "static/css/main.8774e9f1.css",
+    "static/css/main.00b468ee.css",
     "static/js/main.e66a2fec.js"
   ]
 }

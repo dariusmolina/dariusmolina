@@ -1,39 +1,47 @@
 .experience-container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   max-width: 1200px;
   padding: 100px;
 }
 
+/* Adjust section margins */
 .experience-section {
   margin-bottom: 60px;
 }
 
+/* Title Styling */
 h2 {
   color: white;
   font-size: 2rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
+/* Flexbox layout for jobs/roles */
 .work-experience, .leadership-experience {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
+/* Individual job/role cards */
 .job, .role {
   background-color: #333;
   padding: 15px;
   border-radius: 8px;
   color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
 }
 
+/* Hover effect */
 .job:hover, .role:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Title and list styling */
 .job h3, .role h3 {
   margin-bottom: 10px;
   color: #fff;
@@ -49,7 +57,33 @@ h2 {
   color: #ddd;
 }
 
+/* Resume container */
 .resume-container {
   border: 1px solid rgba(0, 0, 0, 0.3);
   height: 750px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 50px 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .job, .role {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Ensure only one job/role is visible at a time */
+  .work-experience, .leadership-experience {
+    flex-direction: column;
+  }
+
+  .resume-container {
+    height: 600px;
+  }
 }

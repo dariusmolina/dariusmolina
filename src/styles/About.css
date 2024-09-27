@@ -1,11 +1,13 @@
+/* Container for the entire about section */
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 150px;
+  padding: 100px 20px;
   text-align: center;
   overflow: auto;
 }
 
+/* For larger screens */
 .about-content {
   display: flex;
   flex-wrap: wrap;
@@ -21,14 +23,16 @@
 }
 
 .about-image img {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: auto;
+  object-fit: cover;
 }
 
 .about-text {
   flex: 2;
   text-align: left;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .about-text p {
@@ -38,16 +42,16 @@
   margin-bottom: 20px;
 }
 
-.about-container h1, 
+.about-container h1,
 .about-container h2 {
-  color: #ffffff; /* Set the headers to white */
+  color: #ffffff;
 }
 
 /* Community Involvement Section */
 .community-involvement {
   margin-top: 100px;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .community-involvement h2 {
@@ -66,27 +70,62 @@
 /* Individual slide */
 .slide {
   text-align: center;
-  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
 .slide img {
-  width: 100%; /* Ensure it scales with the container */
-  max-width: 800px; /* You can adjust this size to fit your design */
-  height: 600px; /* Set the height of all images */
-  object-fit: cover; /* Ensures the image fits the dimensions */
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  object-fit: cover;
 }
 
+/* Caption styling */
 .caption {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  width: 100%;
-  text-align: center;
+  margin-top: 10px;
   color: white;
   font-size: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  text-align: center;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .slide img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .about-container {
+    padding: 50px 20px;
+  }
+
+  .community-involvement {
+    padding-top: 50px;
+  }
+
+  .caption {
+    font-size: 0.9rem;
+  }
 }

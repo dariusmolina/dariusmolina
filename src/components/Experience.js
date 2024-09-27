@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react';
 import FadeInSection from './FadeInSection';
 import '../styles/Experience.css';
 import { Worker, Viewer } from '@react-pdf-viewer/core';
-import '@react-pdf-viewer/core/lib/styles/index.css'; // Import core styles for the PDF viewer
+import '@react-pdf-viewer/core/lib/styles/index.css';
 
 const Experience = () => {
-  const [pdfUrl, setPdfUrl] = useState(null); // State to hold the dynamically imported PDF
+  const [pdfUrl, setPdfUrl] = useState(null);
 
   // Dynamically import the PDF when the component mounts
   useEffect(() => {
     const loadPdf = async () => {
       try {
-        const pdfModule = await import('../assets/pdfs/Darius_Molina_Resume.pdf'); // Adjust path if needed
-        setPdfUrl(pdfModule.default); // Set the PDF URL to the dynamically imported file
+        const pdfModule = await import('../assets/pdfs/Darius_Molina_Resume.pdf');
+        setPdfUrl(pdfModule.default); 
       } catch (error) {
         console.error('Error loading PDF:', error);
       }

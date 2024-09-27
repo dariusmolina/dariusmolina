@@ -9,6 +9,10 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false); // Close the menu when a link is clicked
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll('.fade-on-scroll');
@@ -30,7 +34,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/">DM</Link>
+        <Link to="/" onClick={closeMenu}>DM</Link>
       </div>
       <div className={`nav-menu-icon ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         {/* Hamburger Icon */}
@@ -39,9 +43,9 @@ const Navbar = () => {
         <span></span>
       </div>
       <ul className={`nav-links fade-on-scroll ${isMenuOpen ? 'active' : ''}`}>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/experience">Experience</Link></li>
-        <li><Link to="/projects">Projects</Link></li>
+        <li><Link to="/about" onClick={closeMenu}>About</Link></li>
+        <li><Link to="/experience" onClick={closeMenu}>Experience</Link></li>
+        <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
       </ul>
     </nav>
   );
